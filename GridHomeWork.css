@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 640px 960px;
+    grid-template-rows: 900px;
+}
+.left-side{
+    display: grid;
+    grid-template-rows: 112px 700px 88px;
+}
+.right-side{
+    background-image: url("C:/Users/79811/Downloads/imag1.png");
+}
+header{
+    display: grid;
+    padding: 28px 24px 28px 32px;
+    grid-template-columns: auto auto;
+}
+header nav{
+    padding: 16px;
+    display: grid;
+    align-items: center ;
+}
+header ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    gap: 16px;
+    
+}
+footer{
+    padding: 0px 56px;
+}
+footer div{
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    align-items: center;
+    gap:32px;
+    justify-content: space-between;
+}
+
+main{
+    padding: 80px;
+    gap: 24px;
+    display: grid;
+    grid-template-rows: auto 72px 72px 48px 40px 48px;
+    align-content: center;
+}
+
+.main-nav {
+    display: grid;
+    align-content: end;
+}
+main nav ul{
+    display: grid;
+    list-style-type: none;
+    width: 346px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    
+}
+.main-nav ul li:first-child{
+    color: var(--gray-700, #2D3748);
+    /* 3XL/Semibold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+}
+.main-nav ul li{
+    color: var(--gray-400, #A0AEC0);
+    /* 3XL/Semibold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+}
+.mobil{
+    display: grid;
+    height: 72px;
+    gap: 8px;
+    
+}
+.mobil div span{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #EDF2F7;
+    color: #2D3748;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.mobil div{
+    display: flex;
+    height: 40px;
+}
+.mobil div input{
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.id{
+    display: grid;
+    grid-template-rows: 24px 40px;
+    gap: 8px;
+}
+@media screen and (max-width: 1024px){
+    .right-side{
+        display: none;
+    }
+    .right-side{
+        grid-template-columns: 1fr;
+    }
+}
