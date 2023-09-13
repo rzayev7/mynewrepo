@@ -13,7 +13,7 @@ body{
 }
 .left-side{
     display: grid;
-    grid-template-rows: 112px 700px 88px;
+    grid-template-rows: 112px 700px 87px;
 }
 .right-side{
     background-image: url("C:/Users/79811/Downloads/imag1.png");
